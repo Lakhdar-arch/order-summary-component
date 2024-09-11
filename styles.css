@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+html,body{
+    height:100%;
+    width:100%; 
+    padding:0; 
+    margin:0;
+    display:flex;
+    justify-content:center; 
+    align-items:center;
+    flex-direction:column;
+    background-color:hsl(225, 100%, 94%);
+    background-image:url('./images/pattern-background-desktop.svg');
+    background-repeat:repeat-x;
+    font-family: "Red Hat Display",sans-serif;
+    font-weight:500;
+}
+.container{
+    height:600px;
+    width:500px;
+    background-color:white;
+    border-radius:25px;
+    overflow:hidden;
+}
+.container p{
+    color:hsl(224, 23%, 55%); 
+    padding:0 8%;
+}
+.imageHolder{
+    height:fit-content;
+    overflow:hidden;
+}
+.container .imageHolder img{
+    width:100%;
+}
+.container .imageHolder img:hover{
+    animation:zoom-in-out 1s ease ;
+}
+.container h1,p{
+    text-align:center;
+}
+.innerBox{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around; 
+    align-items:center;
+    background-color:hsl(225, 100%, 98%);
+    width:85%;
+    height:90px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:15px;
+}
+.text{
+    display:flex;
+    flex-direction:column;
+}
+.text span{
+    color:hsl(224, 23%, 55%); 
+}
+.btn-style{
+    height:50px;
+    width:70%;
+    border-radius:15px;
+    border:solid hsl(245, 75%, 52%) 2px;
+    color: white;
+    font-weight:700;
+    font-size: 1.1rem;
+    margin:2% 15%;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.btn-style:hover{
+    background-color:hsl(223, 47%, 23%);
+    border:solid hsl(223, 47%, 23%) 2px;
+    cursor:pointer;
+}
+.Corder{
+    text-align:center;
+    margin-top:1%;
+}
+.Corder a{
+    text-decoration:none;
+    color:hsl(224, 23%, 55%);
+    font-weight:700;
+}
+.attribution { font-size: 11px; text-align: center;margin-top:20px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@keyframes zoom-in-out{
+    50%{
+        transform:scale(1.5,1.5);
+    }
+    100%{
+        transform:scale(1,1);
+    }
+}
+@media(max-width:500px){
+html,body{
+    background-image:url('./images/pattern-background-mobile.svg');
+    background-repeat:repeat-x;
+}
+.container{
+    height:80%;
+    width:90%;
+    background-color:white;
+    border-radius:25px;
+    overflow:hidden;
+}
+}
