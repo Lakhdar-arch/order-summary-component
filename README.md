@@ -1,4 +1,5 @@
 #Order Summary component:
+the web-page has been deployed on : https://lakhdar-arch.github.io/order-summary-component/
 
 on large screen you should:
 
